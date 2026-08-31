@@ -1153,6 +1153,181 @@ input,textarea{
     border-bottom-color: var(--amber) !important;
 }
 
+/* =========================================================
+   FINAL RESPONSIVE FIXES
+   ========================================================= */
+
+/* Tablets and small laptops */
+@media (max-width: 900px) {
+
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 22px !important;
+        padding-right: 22px !important;
+    }
+
+    .services-grid,
+    .work-grid,
+    .tech-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr !important;
+    }
+
+    .contact-form .full {
+        grid-column: auto !important;
+    }
+}
+
+
+/* Mobile phones */
+@media (max-width: 600px) {
+
+    html,
+    body {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    .container {
+        width: 100% !important;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    h1 {
+        max-width: 100% !important;
+        font-size: clamp(32px, 10vw, 52px) !important;
+    }
+
+    h2 {
+        font-size: clamp(26px, 8vw, 40px) !important;
+    }
+
+    p {
+        max-width: 100% !important;
+    }
+
+    .svc-card {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .mobile-group {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .mobile-group select {
+        max-width: 115px !important;
+        min-width: 0 !important;
+    }
+
+    .mobile-group input {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+        max-width: 100% !important;
+    }
+}
+
+
+/* Small phones */
+@media (max-width: 390px) {
+
+    .container {
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+    }
+
+    h1 {
+        font-size: 32px !important;
+    }
+
+    h2 {
+        font-size: 27px !important;
+    }
+
+    p {
+        font-size: 14px !important;
+    }
+
+    .mobile-group select {
+        width: 92px !important;
+        max-width: 92px !important;
+        font-size: 13px !important;
+    }
+
+    .mobile-group input {
+        width: 100% !important;
+        min-width: 0 !important;
+        font-size: 14px !important;
+    }
+
+    .svc-card {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+
+/* Very small phones */
+@media (max-width: 340px) {
+
+    .container {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    h1 {
+        font-size: 29px !important;
+    }
+
+    h2 {
+        font-size: 25px !important;
+    }
+
+    .mobile-group select {
+        width: 82px !important;
+        max-width: 82px !important;
+        font-size: 12px !important;
+    }
+
+    .mobile-group input {
+        font-size: 13px !important;
+    }
+}
+
+
+/* Landscape phones */
+@media (max-height: 500px) and (orientation: landscape) {
+
+    .hero {
+        min-height: auto !important;
+    }
+}
+
+
+/* Large desktop / 2K / 4K */
+@media (min-width: 1600px) {
+
+    .container {
+        max-width: 1400px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+
+
 
 }
 </style>
