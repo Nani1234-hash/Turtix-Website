@@ -1038,6 +1038,7 @@ footer a {
     letter-spacing: 0.03em !important;
 }
 
+
 }
 </style>
 </head>
@@ -1600,7 +1601,7 @@ footer a {
         <h2 class="on-dark">Let's turn your idea into reality.</h2>
         <p class="on-dark-body">Share your idea or technical requirement — we'll get back to you within 24 hours.</p>
       </div>
-      <form
+      <form     
     class="contact-form reveal"
     action="https://formsubmit.co/info@turtixdigital.com"
     method="POST"
@@ -1611,8 +1612,8 @@ footer a {
     <input type="hidden" name="_captcha" value="false">
 
     <input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://www.turtixdigital.com/thank-you.html">
 
-<input type="hidden" name="_next" value="https://turtix-website.vercel.app/thank-you.html">
     <div class="form-row">
 
         <div>
@@ -1651,17 +1652,24 @@ footer a {
     </div>
 <div>
     <label for="mobile">Mobile Number</label>
-    <input
-        id="mobile"
-        name="Mobile Number"
-        type="text"
-        inputmode="numeric"
-        pattern="[0-9]{10}"
-        maxlength="10"
-        placeholder="9876543210"
-        required
-        oninput="this.value = this.value.replace(/[^0-9]/g, '')"
-    >
+
+    <div class="mobile-group">
+
+        
+
+        <input
+            id="mobile"
+            name="Mobile Number"
+            type="tel"
+            inputmode="numeric"
+            pattern="[0-9]{10}"
+            maxlength="10"
+            placeholder="9876543210"
+            required
+            oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+        >
+
+    </div>
 </div>
     <div>
         <label for="msg">Tell us about your project or business idea</label>
